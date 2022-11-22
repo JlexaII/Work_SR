@@ -1,4 +1,4 @@
-<p align="center"><a href="#" target="_blank"><img src="images\Emblema2.png" width="400" alt="SR Logo"></a></p>
+<p align="center"><a href="https://www.silksroads.uz" target="_blank"><img src="https://www.silksroads.uz/images/Emblema2.png" width="400" alt="SR Logo"></a></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
