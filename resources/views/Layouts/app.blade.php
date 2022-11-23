@@ -19,8 +19,19 @@
   @yield('content')
   @include('include.header')
 
+  @include('include.Reklama')
 
   @include('include.footer')
+
+  @include('include.turkums')
+
+  @include('include.Loves')
+
+  @include('include.Savats')
+
+  @include('include.Kirish')
+
+  @include('include.SR')
 
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
