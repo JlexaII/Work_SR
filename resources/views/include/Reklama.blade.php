@@ -2,7 +2,7 @@
     
 <!-- Tarif rejalari -->
   <section>
-    <div class="container-fluid col-7" id="tarif">
+    <div class="container-fluid col-7 " id="tarif">
       <hr>
       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-inner">

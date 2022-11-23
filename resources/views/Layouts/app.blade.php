@@ -15,12 +15,19 @@
   <title>@yield('title-block')</title>
 </head>
 
-<body class="container">
-  @yield('content')
+<body>
+  <div class="container-xxl">
+    @yield('content')
+  </div>
+<div>
   @include('include.header')
+</div>
+<section>
 
+</section>
+<div class="container mt-50">
   @include('include.Reklama')
-
+</div>
   @include('include.footer')
 
   @include('include.turkums')
