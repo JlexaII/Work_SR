@@ -8,3 +8,6 @@ Kompaniya ayzolari 4 yil davomida O'zbekiston bozorida xizmat ko'rsatib keliyapt
 Bu sahifa PHP Laravel 9.40da tuzilgan, yana Bootstrap 5.2.2 adaptiv qismlari qilingan. 
 Asosiy kodlarni o'zim tuzdim va fraymvorklardan foydalanib bu sahifa shu tusda tuzildi.
 Rest API Bazalar bilan ishlash uchun ko'shilgan.
+
+PHP Laravel 9.40 and Bootstrap 5.2.2 with Rest API
+Following job complete with VSCode from Microsoft
