@@ -113,7 +113,7 @@ nav.navbar .dropdown:hover>.dropdown-menu {
 }
 
 .tab-pane.IE {
-  position: absolute;
+position: absolute;
 left    : 10px;
 top     : 150px;
 transition: top 0.5s;
