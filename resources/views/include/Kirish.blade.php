@@ -20,45 +20,42 @@
           </li>          
         </ul>
         <div class="tab-content" id="myTabContent">
+          <!-- Kirish uchun shakl -->
           <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-            <form action="#" method="post">
-              <div class="mb-3">
+            <form action="/users/signin" method="post">
+              <div class="mb-3 IE">
                 <i class="fa-solid fa-envelope"></i>
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                <label for="InputEmail" class="form-label">E-pochta manzili</label>
+                <input type="email" class="form-control" id="InputEmail" name="InputEmail" aria-describedby="emailHelp">
                 <div id="emailHelp" class="form-text">E-pochtangizni hech kim bilan baham ko'rmaymiz.</div>
               </div>
               <div class="mb-3">
                 <i class="fa-solid fa-lock"></i>
-                <label for="exampleInputPassword1" class="form-label">Parol</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" name="password" autocomplete="on" required>
+                <label for="InputPassword" class="form-label">Parol</label>
+                <input type="password" class="form-control" id="InputPassword" name="InputPassword" autocomplete="on">
                 <a href="#" class="password-control"></a>
               </div>              
               <button type="submit" class="btn btn-primary">Bajarish</button>
             </form>
           </div>
+          <!-- Ro'yhatan o'tish uchun shakl -->
           <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-            <form action="#" method="post">
+            <form action="/users/signup" method="post">
               <div class="mb-3">
                 <i class="fa-solid fa-envelope"></i>
-                <label for="exampleInputEmail2" class="form-label">Email address</label>                
-                <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp">
+                <label for="RegEmail" class="form-label">Email address</label>                
+                <input type="text" class="form-control" id="RegEmail" name="RegEmail" aria-describedby="emailHelp">
                 <div id="emailHelp" class="form-text">E-pochtangizni hech kim bilan baham ko'rmaymiz.</div>
               </div>              
               <div class="mb-3">
                 <i class="fa-solid fa-lock"></i>
-                <label for="exampleInputPassword2" class="form-label">Parol</label>                
-                <input type="password" class="form-control" id="exampleInputPassword2" autocomplete="on">
+                <label for="RegPassword" class="form-label">Parol</label>                
+                <input type="password" class="form-control" id="RegPassword" name="RegPassword" autocomplete="on">
                 <a href="#" class="password-control"></a>
               </div>
-              <!-- <div class="mb-3">
-                <i class="fa-solid fa-phone"></i>
-                <label for="tel" class="form-label">Telefon raqam</label>
-                <input type="text" class="form-control" minlength="12" maxlength="12" id="tel">
-              </div> -->
               <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck2">
-                <label class="form-check-label" for="exampleCheck2"><a href="#">Ushbu</a> shartlarni qabul qilaman</label>
+                <input type="checkbox" class="form-check-input" id="RegCheck">
+                <label class="form-check-label" for="RegCheck"><a href="#">Ushbu</a> shartlarni qabul qilaman</label>
               </div>
               <button type="submit" class="btn btn-primary">Bajarish</button>
             </form>

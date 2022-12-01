@@ -24,12 +24,12 @@ function isAsosiy() {
 })()
 
 $('body').on('click', '.password-control', function(){
-	if ($('#exampleInputPassword1, exampleInputPassword2').attr('type') == 'password'){
+	if ($('#InputPassword, #RegPassword').attr('type') == 'password'){
 		$(this).addClass('view');
-		$('#exampleInputPassword1, exampleInputPassword2').attr('type', 'text');
+		$('#InputPassword, #RegPassword').attr('type', 'text');
 	} else {
 		$(this).removeClass('view');
-		$('#exampleInputPassword1, exampleInputPassword2').attr('type', 'password');
+		$('#InputPassword, #RegPassword').attr('type', 'password');
 	}
 	return false;
 });
