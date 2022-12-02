@@ -111,10 +111,3 @@ nav.navbar .dropdown:hover>.dropdown-menu {
   background-color: #ec9704;
   color           : aliceblue;
 }
-
-.tab-pane.IE {
-position: absolute;
-left    : 10px;
-top     : 150px;
-transition: top 0.5s;
-}

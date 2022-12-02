@@ -23,7 +23,7 @@
           <!-- Kirish uchun shakl -->
           <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
             <form action="/users/signin" method="post">
-              <div class="mb-3 IE">
+              <div class="mb-3">
                 <i class="fa-solid fa-envelope"></i>
                 <label for="InputEmail" class="form-label">E-pochta manzili</label>
                 <input type="email" class="form-control" id="InputEmail" name="InputEmail" aria-describedby="emailHelp">
