@@ -22,28 +22,48 @@
         <div class="tab-content" id="myTabContent">
           <!-- Kirish uchun shakl -->
           <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-            <form action="/users/signin" method="post">
+            <form action="{{ route('kirish') }}" method="post">
+              @if ($errors->any())
+                <div class="alert alert-danger">
+                  <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                  </ul>
+                </div>
+              @endif
+              @csrf
               <div class="mb-3">
                 <i class="fa-solid fa-envelope"></i>
                 <label for="InputEmail" class="form-label">E-pochta manzili</label>
-                <input type="email" class="form-control" id="InputEmail" name="InputEmail" aria-describedby="emailHelp">
+                <input type="text" class="form-control" id="InputEmail" name="InputEmail">
                 <div id="emailHelp" class="form-text">E-pochtangizni hech kim bilan baham ko'rmaymiz.</div>
               </div>
               <div class="mb-3">
                 <i class="fa-solid fa-lock"></i>
                 <label for="InputPassword" class="form-label">Parol</label>
-                <input type="password" class="form-control" id="InputPassword" name="InputPassword" autocomplete="on">
+                <input type="password" class="form-control" id="InputPassword" name="InputPassword">
                 <a href="#" class="password-control"></a>
-              </div>              
-              <button type="submit" class="btn btn-primary">Bajarish</button>
+              </div>
+              <button type="submit" class="btn btn-primary">Kirish</button>
             </form>
           </div>
-          <!-- Ro'yhatan o'tish uchun shakl -->
+          <!-- Ro'yhattan o'tish uchun shakl -->
           <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-            <form action="/users/signup" method="post">
+            <form action="{{ route('Ak-ochish') }}" method="post">
+              @if ($errors->any())
+                <div class="alert alert-danger">
+                  <ul>
+                    @foreach ($errors->all() as $error2)
+                        <li>{{ $error2 }}</li>
+                    @endforeach
+                  </ul>
+                </div>
+              @endif            
+              @csrf
               <div class="mb-3">
                 <i class="fa-solid fa-envelope"></i>
-                <label for="RegEmail" class="form-label">Email address</label>                
+                <label for="RegEmail" class="form-label">E-pochta manzili</label>                
                 <input type="text" class="form-control" id="RegEmail" name="RegEmail" aria-describedby="emailHelp">
                 <div id="emailHelp" class="form-text">E-pochtangizni hech kim bilan baham ko'rmaymiz.</div>
               </div>              
@@ -57,7 +77,7 @@
                 <input type="checkbox" class="form-check-input" id="RegCheck">
                 <label class="form-check-label" for="RegCheck"><a href="#">Ushbu</a> shartlarni qabul qilaman</label>
               </div>
-              <button type="submit" class="btn btn-primary">Bajarish</button>
+              <button type="submit" class="btn btn-primary">Yuborish</button>
             </form>
           </div>
         </div>
