@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('signups', function (Blueprint $table) {
             $table->id();
-            $table->email();
-            $table->password();
+            $table->string('email');
+            $table->string('password');
             $table->timestamps();
         });
     }
