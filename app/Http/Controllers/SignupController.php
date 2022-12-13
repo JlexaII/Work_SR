@@ -14,5 +14,6 @@ class SignupController extends Controller {
     $signup->password = $req->input('RegPassword');
 
     $signup->save();
+    return redirect()->route('contacts')->with('success', 'Данные оправлены!');
   }
 }

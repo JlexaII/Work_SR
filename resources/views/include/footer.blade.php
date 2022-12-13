@@ -1,7 +1,7 @@
 @section('footer')
 
   <!-- Footer ko'zi-->
-  <div class="container-xxl d-none d-md-block bg-light fixed-bottom">
+  <div class="container-xxl d-md-block bg-light text-center fixed-bottom">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <div class="col-md-4 d-flex align-items-center">
         <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
@@ -23,7 +23,7 @@
       </ul>
     </footer>
   </div>
-
+ 
   <!-- Menyu telefonlari uchun-->
   <footer class="container-xxl d-md-none d-md-block bg-light text-center fixed-bottom">
     <div class="btn-group me-2" role="group" aria-label="Basic example">

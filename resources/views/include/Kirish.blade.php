@@ -23,15 +23,6 @@
           <!-- Kirish uchun shakl -->
           <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
             <form action="{{ route('kirish') }}" method="post">
-              @if ($errors->any())
-                <div class="alert alert-danger">
-                  <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                  </ul>
-                </div>
-              @endif
               @csrf
               <div class="mb-3">
                 <i class="fa-solid fa-envelope"></i>
@@ -51,15 +42,6 @@
           <!-- Ro'yhattan o'tish uchun shakl -->
           <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
             <form action="{{ route('Ak-ochish') }}" method="post">
-              @if ($errors->any())
-                <div class="alert alert-danger">
-                  <ul>
-                    @foreach ($errors->all() as $error2)
-                        <li>{{ $error2 }}</li>
-                    @endforeach
-                  </ul>
-                </div>
-              @endif            
               @csrf
               <div class="mb-3">
                 <i class="fa-solid fa-envelope"></i>
