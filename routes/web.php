@@ -18,3 +18,6 @@ Route::get('/contact', function () {
 Route::post('/users/signin', 'App\Http\Controllers\SigninController@signin')->name('kirish');
 
 Route::post('/users/signup', 'App\Http\Controllers\SignupController@signup')->name('Ak-ochish');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
